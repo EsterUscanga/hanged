@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+</head>
+
+<body onload="loadgame()">
+  <div class="container" id="uno">
+    <div class="row">
+      <div class="column table-responsive">
+        <table class="table-bordered" id="keyboard">
+
+        </table>
+      </div>
+      <div class="column" id="inputs">
+
+      </div>
+      <div class="imagenes" id="image">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="column vidas botones">
+        <button id="restart" onclick="loadgame()">Reiniciar</button>
+        <button id="historial">Historial</button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="display: none;" class="historial" id="dos">
+    <table class= "table-bordered" id="hist">
+    	
+    </table>
+    <button id="salir" >Atras</button>
+
+  </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/keyboard.js"></script>
+
+</html>
